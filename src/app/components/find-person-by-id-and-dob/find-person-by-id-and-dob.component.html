@@ -1,0 +1,35 @@
+<section class="person-section">
+  <h1 class="person-title">Find person by personal ID and date of birth</h1>
+
+  <div class="person-container">
+    <div class="person">
+      <div class="person-action-container">
+        <input [(ngModel)]="inputValue1" class="person-input-1" type="text" placeholder="Enter personal ID..."/>
+        <input [(ngModel)]="inputValue2" class="person-input-2" type="text" placeholder="Enter Date of birth..."/>
+
+        <button (click)="searchPerson()" class="person-btn-add">Search</button>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="table-section">
+  <h1 class="table-title">Result table</h1>
+  <div *ngIf="person$ | async as person" class="table-container">
+        <span>
+          {{ person.personalId }}
+          {{ person.firstName }}
+          {{ person.lastName }}
+          {{ person.gender }}
+          {{ person.dateOfBirth }}
+        </span>
+  </div>
+
+  <div *ngIf="error$ | async as error" class="table-container">
+        <span>
+          {{ error }}
+        </span>
+  </div>
+
+</section>

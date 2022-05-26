@@ -1,0 +1,103 @@
+.person-section {
+  padding: 20px 0 0 0;
+}
+
+.table-section {
+  padding: 0 0 0 0;
+}
+
+.person-container {
+  display: flex;
+  justify-content: center;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+}
+
+.person-title {
+  text-align: center;
+}
+
+.table-title {
+  text-align: center;
+}
+
+.person {
+  // border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: #faf5d7;
+  width: 500px;
+  min-width: 280px;
+}
+
+.table {
+  // border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: azure;
+  width: 800px;
+  min-width: 280px;
+}
+
+.person-action-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.table-action-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.person-input-1 {
+  width: 100%;
+  height: 30px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0, rgba(27, 31, 35, 0.15) 0 0 0 1px;
+  border-radius: 4px;
+  padding: 0 5px;
+  outline: none;
+}
+
+.person-input-2 {
+  width: 100%;
+  height: 30px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0, rgba(27, 31, 35, 0.15) 0 0 0 1px;
+  border-radius: 4px;
+  padding: 0 5px;
+  outline: none;
+}
+
+// List
+
+.person-list {
+  padding: 0 20px;
+}
+
+.person-list-item::marker {
+  color: cornflowerblue;
+}
+
+// Button
+
+.person-btn-add {
+  border: none;
+  padding: 5px 15px;
+  background-color: cornflowerblue;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background-color .2s ease-in-out;
+
+  &:hover {
+    background-color: #4e82ea;
+  }
+}
