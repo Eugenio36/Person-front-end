@@ -34,23 +34,7 @@
   min-width: 280px;
 }
 
-.table {
-  // border: 1px solid black;
-  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
-  border-radius: 4px;
-  padding: 20px;
-  background-color: azure;
-  width: 800px;
-  min-width: 280px;
-}
-
 .person-action-container {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.table-action-container {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -74,16 +58,6 @@
   border-radius: 4px;
   padding: 0 5px;
   outline: none;
-}
-
-// List
-
-.person-list {
-  padding: 0 20px;
-}
-
-.person-list-item::marker {
-  color: cornflowerblue;
 }
 
 // Button
